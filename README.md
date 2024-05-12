@@ -2,7 +2,7 @@
 
 **AIM:**
 
-To implement  D flipflop using verilog and validating their functionality using their functional tables
+To implement D flipflop using verilog and validating their functionality using their functional tables
 
 **SOFTWARE REQUIRED:**
 
@@ -29,16 +29,46 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 **Procedure**
 
 /* write all the steps invloved */
+```
+1.Type the program in Quartus software.
+
+2.Compile and run the program.
+
+3.Generate the RTL schematic and save the logic diagram.
+
+4.Create nodes for inputs and outputs to generate the timing diagram.
+
+5.For different input combinations generate the timing diagram.
+```
 
 **PROGRAM**
 
 /* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
 */
+```
+Developed By: POOJA A
+Register No: 212222240072
+```
+
+```
+module ex(D,Clock,Q,reset);
+input D,Clock,reset;
+output reg Q;
+always @ (negedge Clock)
+if(!reset)
+  Q<=0;
+  else
+  Q<=D;
+ endmodule
+```
 
 **RTL LOGIC FOR FLIPFLOPS**
+![image](https://github.com/poojaanbu0/D-FLIPDLOP-NEGEDGE/assets/119390329/f1f16cb1-0d1f-4679-9520-618e84b5f389)
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
+![image](https://github.com/poojaanbu0/D-FLIPDLOP-NEGEDGE/assets/119390329/1f81d90f-f7d0-49fc-a3b6-708b294cd416)
 
 
 **RESULTS**
+D flipflop using verilog and validating their functionality using their functional tables completed
